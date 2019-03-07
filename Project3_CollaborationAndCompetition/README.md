@@ -1,19 +1,24 @@
-Repository for the final submission of the NAVIGATION-Project in the Udacity Nanodegree Deep Reinforcement Learning
+Repository for the final submission of the CONTINUOUS_CONTROL-Project in the Udacity Nanodegree Deep Reinforcement Learning
 
-### Introduction
+## Project Details
 
-For this project, you will train an agent to navigate (and collect bananas!) in a large, square world.
+The *state space* for this project consists of 8 continuous values representing the position and velocity of a racket and ball in the X-Y plane.
 
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
+The *action space* is a vector with two continuous values, clamped between -1 and 1, corresponding to the X and Y movements of the racket in the game, where the goal is to move the racket so it collides with the ball in a manner that causes the ball to move over the net, but not "go out" (collide with the back of the court area). 
 
-The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  Given this information, the agent has to learn how to best select actions.  Four discrete actions are available, corresponding to:
-- **`0`** - move forward.
-- **`1`** - move backward.
-- **`2`** - turn left.
-- **`3`** - turn right.
+Code for the Unity **Tennis** agent can be viewed [here](https://github.com/Unity-Technologies/ml-agents/blob/master/UnitySDK/Assets/ML-Agents/Examples/Tennis/Scripts/TennisAgent.cs)
 
-The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
-(To make sure the environment is solved in the code we accept an average reward of 15 over 100 episodes)
+The image below shows the Unity version of the environment with 18 games (36 agents):
+
+![Tennis Environment](Tennis environment.png)
+
+And the single court version with 2 agents from Udacity looks like this:
+
+![Tennis single](Tennis environment - single.png)
+
+A reward of +0.1 is provided for each step that the agent's shot goes over the net and not out, while a penalty of -0.01 for any failed shot or when the ball collides with the floor.
+
+The environment is considered solved when the agents have an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents).
 
 ### Instructions:
 
