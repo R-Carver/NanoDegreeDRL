@@ -35,7 +35,3 @@ https://github.com/udacity/deep-reinforcement-learning#dependencies )
 (Parts of this readme reuse the instructions from the Udacity Page)
 
 2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
-
-### Instructions
-
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
